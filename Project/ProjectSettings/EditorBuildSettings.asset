@@ -12,17 +12,8 @@ EditorBuildSettings:
     path: Assets/Cenas/Menu.unity
     guid: 9279f4fe9e9434e729e6da1bf16c8693
   - enabled: 1
-    path: Assets/Cenas/Cena01.unity
-    guid: 900c13a3ccd7d1c4aa866ac995c56d1a
-  - enabled: 1
-    path: Assets/Cenas/Cena02.unity
-    guid: f78b835d9ec028d41805f84a34ccb6a3
-  - enabled: 1
-    path: Assets/Cenas/Cena03.unity
-    guid: 014d717f3be8c0a40b0476c8230fc262
-  - enabled: 1
-    path: Assets/Cenas/StageTeste1.unity
+    path: Assets/Cenas/Cena1.unity
     guid: 57135495b4c31ee47be67d23737dc175
   - enabled: 1
-    path: Assets/Cenas/StageTeste.unity
+    path: Assets/Cenas/Cena0.unity
     guid: c8571746eb3442449b633419d3cbbf15

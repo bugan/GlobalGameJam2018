@@ -6,7 +6,7 @@ public class CarregarMuitasCenas : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		SceneManager.LoadSceneAsync("Cena02", LoadSceneMode.Additive);
+		SceneManager.LoadSceneAsync("StageTeste1", LoadSceneMode.Additive);
 		
 	}
 	
