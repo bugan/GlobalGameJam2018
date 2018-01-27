@@ -11,7 +11,7 @@ public class Slot : MonoBehaviour {
 	public Trilho[] saidas;
 
 	private bool _podeLigar;
-	private CuboElemental _cuboLigado;
+	private CuboElemental _cuboConectado;
 
 	void Start () {
 
@@ -20,11 +20,11 @@ public class Slot : MonoBehaviour {
 	void Update () {
 		this._verificarEntradas ();
 		if (!this.estaLigado) {
-			if (this._cuboLigado != null && this._podeLigar) {
-				this._ligar (this._cuboLigado.tipo);
+			if (this._cuboConectado != null && this._podeLigar) {
+				this._ligar (this._cuboConectado.tipo);
 			}
 		} else {
-			if (this._cuboLigado == null || !this._podeLigar) {
+			if (this._cuboConectado == null || !this._podeLigar) {
 				this._desligar ();
 			}
 		}
@@ -34,23 +34,21 @@ public class Slot : MonoBehaviour {
 		CuboElemental cubo = other.transform.GetComponent<CuboElemental> ();
 		if (cubo == null)
 			return;
-		this._cuboLigado = cubo;
+		this._cuboConectado = cubo;
 	}
 
 	private void OnTriggerExit (Collider other) {
-		if (this._cuboLigado == null)
+		if (this._cuboConectado == null)
 			return;
-		if (other.gameObject == this._cuboLigado.gameObject) {
+		if (other.gameObject == this._cuboConectado.gameObject) {
 			this._desligar ();
-
-			this._cuboLigado = null;
+			this._cuboConectado = null;
 		}
 	}
 
 	private void _ligar (Elementos tipo) {
-
 		this.estaLigado = true;
-		this._cuboLigado.reagir (this.tipoEntrada);
+		this._cuboConectado.reagir (this.tipoEntrada);
 		for (var i = 0; i < this.saidas.Length; i++) {
 			this.saidas[i].ativo = true;
 			this.saidas[i].tipo = tipo;
