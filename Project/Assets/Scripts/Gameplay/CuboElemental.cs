@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CuboElemental : MonoBehaviour {
+public abstract class CuboElemental : MonoBehaviour {
 
 	public Elementos tipo;
+
+	
+
+	public abstract void reagir (Elementos tipoEntrada);
 }

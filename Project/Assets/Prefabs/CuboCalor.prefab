@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4650119970984146}
   - component: {fileID: 33686473232365172}
   - component: {fileID: 23191002368955956}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114786608326976254}
   - component: {fileID: 114819690005878840}
   - component: {fileID: 65417449204535062}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CuboCalor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1772912940942708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e962027cd8d67b4e863d17b1479bf65, type: 3}
+  m_Script: {fileID: 11500000, guid: 400e479f1983aea4d9ae2a4ad73eb44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tipo: 2

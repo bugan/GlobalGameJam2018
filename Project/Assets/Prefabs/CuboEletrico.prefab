@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114730644777476782}
   - component: {fileID: 114571324504527762}
   - component: {fileID: 65325444015949216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CuboEletrico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 4365676628648714}
   - component: {fileID: 33577918136121174}
   - component: {fileID: 23919281432021170}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1332755430600692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e962027cd8d67b4e863d17b1479bf65, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c95eda9c9bd67c439bb4abb5e2c749a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tipo: 1
