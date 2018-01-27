@@ -12,6 +12,9 @@ ModelImporter:
     400002: caixaMiolo
     400004: caixaQuadro
     2100000: No Name
+    2100002: caixa_borda
+    2100004: caixa cantos
+    2100006: interior
     2300000: caixaMiolo
     2300002: caixaQuadro
     3300000: caixaMiolo
