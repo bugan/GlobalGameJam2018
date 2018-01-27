@@ -1,29 +1,53 @@
 fileFormatVersion: 2
-guid: 569fd81862ec94e4ba77a04f672a2bee
-timeCreated: 1517030540
+guid: 2306bf541825d054781f758b66087f81
+timeCreated: 1517064145
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: portaArco
-    100004: portaFolha01
-    100006: portaFolha02
-    400000: //RootNode
-    400002: portaArco
-    400004: portaFolha01
-    400006: portaFolha02
+    100000: chao
+    100002: corredor entrada
+    100004: "corredor sa\xEDda"
+    100006: parede leste
+    100008: parede leste001
+    100010: parede norte
+    100012: parede sul
+    100014: //RootNode
+    100016: teto
+    400000: chao
+    400002: corredor entrada
+    400004: "corredor sa\xEDda"
+    400006: parede leste
+    400008: parede leste001
+    400010: parede norte
+    400012: parede sul
+    400014: //RootNode
+    400016: teto
     2100000: No Name
-    2300000: portaArco
-    2300002: portaFolha01
-    2300004: portaFolha02
-    3300000: portaArco
-    3300002: portaFolha01
-    3300004: portaFolha02
-    4300000: portaArco
-    4300002: portaFolha02
-    4300004: portaFolha01
-    7400000: Abrir
+    2300000: chao
+    2300002: corredor entrada
+    2300004: "corredor sa\xEDda"
+    2300006: parede leste
+    2300008: parede leste001
+    2300010: parede norte
+    2300012: parede sul
+    2300014: teto
+    3300000: chao
+    3300002: corredor entrada
+    3300004: "corredor sa\xEDda"
+    3300006: parede leste
+    3300008: parede leste001
+    3300010: parede norte
+    3300012: parede sul
+    3300014: teto
+    4300000: chao
+    4300002: parede leste
+    4300004: parede sul
+    4300006: parede norte
+    4300008: teto
+    4300010: "corredor sa\xEDda"
+    4300012: corredor entrada
+    4300014: parede leste001
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -51,35 +75,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Abrir
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 15
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -108,7 +104,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
