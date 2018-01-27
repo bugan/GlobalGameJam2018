@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Slot : MonoBehaviour {
 
+	public UnityEvent AoLigar;
+	public UnityEvent AoDesligar;
 	public bool estaLigado;
 	public Elementos tipoEntrada;
 	public Trilho[] entradas;
@@ -19,11 +22,11 @@ public class Slot : MonoBehaviour {
 	void Update () {
 		this._verificarEntradas ();
 
-		if (this._cuboConectado != null && this._podeLigar) {
+		if (this._cuboConectado != null && this._podeLigar && ! this.estaLigado) {
 			this._ligar ();
 		}
 
-		if (this._cuboConectado == null || !this._podeLigar) {
+		if ((this._cuboConectado == null || !this._podeLigar) && !this.estaLigado) {
 			this._desligar ();
 		}
 
@@ -46,6 +49,7 @@ public class Slot : MonoBehaviour {
 	}
 
 	private void _ligar () {
+		this.AoLigar.Invoke();
 		Elementos tipo = this._cuboConectado.tipoResultante (this.tipoEntrada);
 		this.estaLigado = true;
 		for (var i = 0; i < this.saidas.Length; i++) {
@@ -56,6 +60,7 @@ public class Slot : MonoBehaviour {
 	}
 
 	private void _desligar () {
+		this.AoDesligar.Invoke();
 		this.estaLigado = false;
 		if (this._cuboConectado != null) {
 			this._cuboConectado.desligar ();
