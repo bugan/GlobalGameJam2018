@@ -7,6 +7,7 @@ public class Slot : MonoBehaviour {
 
 	public UnityEvent AoLigar;
 	public UnityEvent AoDesligar;
+	[HideInInspector]
 	public bool estaLigado;
 	public Elementos tipoEntrada;
 	public Trilho[] entradas;
@@ -51,6 +52,7 @@ public class Slot : MonoBehaviour {
 	private void _ligar () {
 		if (this.estaLigado)
 			return;
+
 		this.AoLigar.Invoke ();
 		Elementos tipo = this._cuboConectado.tipoResultante (this.tipoEntrada);
 		this.estaLigado = true;

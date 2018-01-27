@@ -14,6 +14,7 @@ public class CuboLuz : CuboElemental {
 			Debug.Log ("Gerar Luz");
 			this._luz.enabled = true;
 			this._som.Play();
+			this.ativo = true;
 		}else{
 			Debug.Log("Neutro");
 		}
@@ -21,6 +22,7 @@ public class CuboLuz : CuboElemental {
 
 	override public void desligar () {
 		this._luz.enabled = false;
+		this.ativo = false;
 	}
 
 	override public Elementos tipoResultante (Elementos tipoEntrada) {

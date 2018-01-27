@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class CuboCalor : CuboElemental {
 
+	public Material materialAceso;
+	public Material materialApagado;
+	public MeshRenderer miolo;
+
 	override public void reagir (Elementos tipoEntrada) {
 		if (tipoEntrada == Elementos.Eletricidade || tipoEntrada == Elementos.Calor) {
 			Debug.Log ("Gerar Calor");
-		}else{
-			Debug.Log("Neutro");
+			this.miolo.material = materialAceso;
+			this.ativo = true;
+			
+		} else {
+			Debug.Log ("Neutro");
 		}
 	}
 	override public void desligar () {
-		
+			this.miolo.material = materialApagado;
+			this.ativo = false;
 	}
 
 	override public Elementos tipoResultante (Elementos tipoEntrada) {
@@ -22,7 +30,7 @@ public class CuboCalor : CuboElemental {
 		if (tipoEntrada == Elementos.Calor) {
 			return Elementos.Calor;
 		}
-		
+
 		return Elementos.Neutro;
-	}	
+	}
 }

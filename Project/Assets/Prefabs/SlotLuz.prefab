@@ -144,7 +144,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1546360238084664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.767, z: -0.495}
+  m_LocalPosition: {x: 0, y: 0.306, z: 0.041}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4937820902455978}
@@ -170,7 +170,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1686648889536238}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8779048, y: -0.215, z: -0.08654785}
+  m_LocalPosition: {x: 1.8779048, y: -0.215, z: 0.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4653425055313136}
@@ -259,8 +259,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.838397, z: 1}
-  m_Center: {x: 0, y: 0.9191985, z: 0}
+  m_Size: {x: 0.20223403, y: 1.838397, z: 0.29687738}
+  m_Center: {x: -0.000028967857, y: 0.9191985, z: -0.006729126}
 --- !u!82 &82285206346289578
 AudioSource:
   m_ObjectHideFlags: 1
@@ -513,11 +513,10 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   estaLigado: 0
-  tipoEntrada: 1
+  tipoEntrada: 0
   entradas:
   - {fileID: 0}
   saidas: []
-  _cuboConectado: {fileID: 0}
 --- !u!114 &114616843249816694
 MonoBehaviour:
   m_ObjectHideFlags: 1
