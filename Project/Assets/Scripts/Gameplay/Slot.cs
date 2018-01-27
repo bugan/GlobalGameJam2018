@@ -6,7 +6,6 @@ public class Slot : MonoBehaviour {
 
 	public bool estaLigado;
 	public Elementos tipoEntrada;
-	public Elementos tipoCubo;
 	public Trilho[] entradas;
 	public Trilho[] saidas;
 
@@ -21,7 +20,7 @@ public class Slot : MonoBehaviour {
 		this._verificarEntradas ();
 		if (!this.estaLigado) {
 			if (this._cuboConectado != null && this._podeLigar) {
-				this._ligar (this._cuboConectado.tipo);
+				this._ligar ();
 			}
 		} else {
 			if (this._cuboConectado == null || !this._podeLigar) {
@@ -46,9 +45,10 @@ public class Slot : MonoBehaviour {
 		}
 	}
 
-	private void _ligar (Elementos tipo) {
-		this.estaLigado = true;
+	private void _ligar () {
+		Elementos tipo = this._cuboConectado.tipoResultante(this.tipoEntrada);
 		this._cuboConectado.reagir (this.tipoEntrada);
+		this.estaLigado = true;
 		for (var i = 0; i < this.saidas.Length; i++) {
 			this.saidas[i].ativo = true;
 			this.saidas[i].tipo = tipo;
@@ -73,7 +73,6 @@ public class Slot : MonoBehaviour {
 				if (this.entradas[i].ativo == false)
 					return;
 			}
-
 			this.tipoEntrada = _tipo;
 		}
 		this._podeLigar = true;

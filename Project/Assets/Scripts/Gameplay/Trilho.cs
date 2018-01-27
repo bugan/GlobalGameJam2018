@@ -5,7 +5,6 @@ using UnityEngine;
 public class Trilho : MonoBehaviour {
 
 	public bool ativo;
-	[HideInInspector]
 	public Elementos tipo;
 	
 }
