@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4726069039005102}
   - component: {fileID: 54597194874606968}
   - component: {fileID: 114730644777476782}
+  - component: {fileID: 114571324504527762}
+  - component: {fileID: 65325444015949216}
   m_Layer: 0
   m_Name: CuboEletrico
   m_TagString: Untagged
@@ -37,7 +39,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4365676628648714}
   - component: {fileID: 33577918136121174}
-  - component: {fileID: 65572041602254502}
   - component: {fileID: 23919281432021170}
   m_Layer: 0
   m_Name: Cube
@@ -66,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1332755430600692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.29, z: 0}
+  m_LocalPosition: {x: -3.19, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4365676628648714}
@@ -129,18 +130,30 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65572041602254502
+--- !u!65 &65325444015949216
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1492866918424532}
+  m_GameObject: {fileID: 1332755430600692}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114571324504527762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1332755430600692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e962027cd8d67b4e863d17b1479bf65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipo: 1
 --- !u!114 &114730644777476782
 MonoBehaviour:
   m_ObjectHideFlags: 1

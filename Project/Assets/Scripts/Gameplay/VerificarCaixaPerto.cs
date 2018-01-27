@@ -16,7 +16,7 @@ public class VerificarCaixaPerto : MonoBehaviour {
 		RaycastHit hit;
 		if (this._segurando == null) {
 
-			if (Physics.Raycast (this.transform.position, this.transform.forward, out hit, this.distanciaMiminaParaPegar)) {
+			if (Physics.Raycast (this.transform.position, this.transform.forward, out hit, this.distanciaMiminaParaPegar,1<<8)) {
 
 				this.SendMessageUpwards ("mostrarAtalhoLevantarCaixa");
 				if (Input.GetKeyDown (KeyCode.E)) {
