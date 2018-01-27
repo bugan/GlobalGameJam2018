@@ -500,6 +500,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 114730644777476782, guid: 792aac38b2b10974dbdf75007b50aba2,
+        type: 2}
+      propertyPath: ligada
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 792aac38b2b10974dbdf75007b50aba2, type: 2}
   m_IsPrefabParent: 0
@@ -565,8 +570,8 @@ Prefab:
       objectReference: {fileID: 804216522}
     - target: {fileID: 114272023503608398, guid: c5e30669c80f61d48b5f58abfab8b0ab,
         type: 2}
-      propertyPath: tipoEntrada
-      value: 0
+      propertyPath: inicio
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c5e30669c80f61d48b5f58abfab8b0ab, type: 2}
@@ -810,6 +815,11 @@ Prefab:
         type: 2}
       propertyPath: spreadCustomCurve.m_RotationOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
+        type: 2}
+      propertyPath: tipo
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
