@@ -2071,7 +2071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d3ed660df8c2844a0aafb58fd99597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quantidade: 8
+  quantidade: 4
   botaoPrefab: {fileID: 1889709538957814, guid: dcc18c1f7df3baf4094a081330a5b375,
     type: 2}
 --- !u!1 &1791343290
