@@ -7,18 +7,24 @@ public class Porta : MonoBehaviour {
 	public Trilho entrada;
 	public Elementos tipo;
 
-	public UnityEvent terminarCena;
-
+	public UnityEvent aoPassarPelaPorta;
+	private Animator _animacao;
 	private bool _estaAberta;
 
 	private void Start () {
 		this._estaAberta = false;
+		this._animacao = this.GetComponentInChildren<Animator> ();
 	}
 
 	void Update () {
+		this._animacao.SetBool ("estaAberta", this._estaAberta);
+		if (this.entrada == null)
+		{
+			this._abrir ();
+			return;
+		}
 
 		if (this.entrada.tipo == this.tipo) {
-
 			if (this.entrada.ativo) {
 				this._abrir ();
 			} else {
@@ -29,12 +35,11 @@ public class Porta : MonoBehaviour {
 		}
 	}
 
-	private void OnTriggerEnter(Collider other) {
-		if(other.tag != "Player")
+	private void OnTriggerEnter (Collider other) {
+		if (other.tag != "Player")
 			return;
-		if(this._estaAberta)
-		{
-			this.terminarCena.Invoke();
+		if (this._estaAberta) {
+			this.aoPassarPelaPorta.Invoke ();
 		}
 	}
 

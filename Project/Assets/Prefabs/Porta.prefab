@@ -144,7 +144,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1458351770679538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.91, y: 0, z: -12.240001}
+  m_LocalPosition: {x: 3.33, y: 0, z: -12.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4020067356761040}
@@ -297,8 +297,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.12, y: 8.01, z: 1}
-  m_Center: {x: -3.23, y: 0, z: 0.24}
+  m_Size: {x: 6.12, y: 2.88, z: 0.58067584}
+  m_Center: {x: -3.23, y: 1.3499999, z: -3.35}
 --- !u!95 &95475682997572688
 Animator:
   serializedVersion: 3
@@ -308,7 +308,7 @@ Animator:
   m_GameObject: {fileID: 1968484945097140}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 569fd81862ec94e4ba77a04f672a2bee, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f90a2199edcb6284292d13bedfc75f9c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -340,7 +340,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Cena02
+          m_StringArgument: Cena01
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
