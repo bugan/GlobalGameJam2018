@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SplashCreen : MonoBehaviour {
 
@@ -22,6 +23,7 @@ public class SplashCreen : MonoBehaviour {
 
 	private void Update()
 	{
+		
 		//Fade in 
 		if(Time.time < minLogoTime)
 		{
@@ -34,9 +36,10 @@ public class SplashCreen : MonoBehaviour {
 			fadeGroup.alpha = Time.time - minLogoTime;
 			if(fadeGroup.alpha >= 1)
 			{
-				Debug.Log("Mudar Cena");
+				SceneManager.LoadScene("Menu");
 			}
-		}
+		}			
+
 
 	}
 }
