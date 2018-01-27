@@ -86,9 +86,6 @@ public class MenuScene : MonoBehaviour {
 		{
 			int currentIndex = i; 
 			Button b = t.GetComponent<Button>();
-//			b.onClick.AddListener(() => OnLevelSelect(currentIndex));
-			
-
 			i++;
 		}
 	}

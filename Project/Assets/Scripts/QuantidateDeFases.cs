@@ -13,7 +13,7 @@ public class QuantidateDeFases : MonoBehaviour {
 		for (int i = 0; i < this.quantidade; i++) {
 			GameObject instancia = GameObject.Instantiate (this.botaoPrefab, this.transform);
 			Botao botao = instancia.GetComponent<Botao>();
-			botao.configurarCena("Cena"+ i);
+			botao.configurarCena("Cena"+ i, i+1);
 			if(i>leveisAbertos){
 				botao.bloquear();
 			}
