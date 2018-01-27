@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-
 public class SplashCreen : MonoBehaviour {
-
+	public UnityEvent TerminarCena;
 	private CanvasGroup fadeGroup; 
 	private float loadTime; 
 	private float minLogoTime = 3.0f; 
@@ -36,7 +36,7 @@ public class SplashCreen : MonoBehaviour {
 			fadeGroup.alpha = Time.time - minLogoTime;
 			if(fadeGroup.alpha >= 1)
 			{
-				SceneManager.LoadScene("Menu");
+				TerminarCena.Invoke();
 			}
 		}			
 

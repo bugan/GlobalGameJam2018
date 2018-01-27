@@ -86,17 +86,10 @@ public class MenuScene : MonoBehaviour {
 		{
 			int currentIndex = i; 
 			Button b = t.GetComponent<Button>();
-			b.onClick.AddListener(() => OnLevelSelect(currentIndex));
+//			b.onClick.AddListener(() => OnLevelSelect(currentIndex));
 			
 
 			i++;
 		}
-	}
-
-	private void OnLevelSelect(int currentIndex)
-	{
-		Manager.Instance.currentLevel = currentIndex;
-		SceneManager.LoadScene("Jogo");
-		Debug.Log("Selecionando level : " + currentIndex);
 	}
 }
