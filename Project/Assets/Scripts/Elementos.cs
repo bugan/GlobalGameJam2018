@@ -4,5 +4,6 @@ using System.Collections.Generic;
 public enum Elementos{
     Luz,
     Eletricidade, 
-    Calor
+    Calor,
+    Neutro,
 }

@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Porta : MonoBehaviour {
 	public Trilho entrada;
 	public Elementos tipo;
+
+	public UnityEvent terminarCena;
 
 	private bool _estaAberta;
 
@@ -23,6 +26,15 @@ public class Porta : MonoBehaviour {
 			}
 		} else {
 			this._fechar ();
+		}
+	}
+
+	private void OnTriggerEnter(Collider other) {
+		if(other.tag != "Player")
+			return;
+		if(this._estaAberta)
+		{
+			this.terminarCena.Invoke();
 		}
 	}
 
