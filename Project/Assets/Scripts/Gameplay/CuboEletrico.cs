@@ -7,6 +7,8 @@ public class CuboEletrico : CuboElemental {
 	override public void reagir (Elementos tipoEntrada) {
 		if (tipoEntrada == Elementos.Luz) {
 			Debug.Log ("Gerar Eletricidade");
+		}else{
+			Debug.Log("Neutro");
 		}
 	}
 
