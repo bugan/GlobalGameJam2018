@@ -54,8 +54,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1672400659749918}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: -0.5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4726069039005102}
@@ -68,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1332755430600692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1088437, y: 0.5, z: 4.271723}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4112000438696140}
@@ -89,7 +89,9 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f5fcac1b9a8262e40a82329c3d0e1568, type: 2}
+  - {fileID: 2100000, guid: 9d16aadacf1952c489d50543e3870a42, type: 2}
+  - {fileID: 2100000, guid: 9b065e6a331eeee49a121b7b1c154579, type: 2}
+  - {fileID: 2100000, guid: ea4f027d60379124c9b540603adc09ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -141,8 +143,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 1.0108514}
+  m_Center: {x: 0, y: 0, z: 0.4989345}
 --- !u!95 &95964645456616554
 Animator:
   serializedVersion: 3
@@ -183,3 +185,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 678d69f5e85768643b11c67dbe0fcb48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ligada: 1

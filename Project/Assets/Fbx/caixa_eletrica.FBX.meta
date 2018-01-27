@@ -8,6 +8,9 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: No Name
+    2100002: External crate
+    2100004: Light
+    2100006: Paineis
     2300000: //RootNode
     3300000: //RootNode
     4300000: caixaEletrica
