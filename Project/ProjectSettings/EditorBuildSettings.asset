@@ -20,3 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cenas/Cena03.unity
     guid: 014d717f3be8c0a40b0476c8230fc262
+  - enabled: 1
+    path: Assets/Cenas/StageTeste1.unity
+    guid: 57135495b4c31ee47be67d23737dc175
+  - enabled: 1
+    path: Assets/Cenas/StageTeste.unity
+    guid: c8571746eb3442449b633419d3cbbf15
