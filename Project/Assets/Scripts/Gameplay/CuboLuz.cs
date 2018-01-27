@@ -3,13 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CuboLuz : CuboElemental {
-
+	Light _luz;
+	private void Start() {
+		this._luz = this.GetComponentInChildren<Light>();
+	}
 	override public void reagir (Elementos tipoEntrada) {
 		if (tipoEntrada == Elementos.Eletricidade || tipoEntrada == Elementos.Calor) {
 			Debug.Log ("Gerar Luz");
+			this._luz.enabled = true;
 		}else{
 			Debug.Log("Neutro");
 		}
+	}
+
+	override public void desligar () {
+		this._luz.enabled = false;
 	}
 
 	override public Elementos tipoResultante (Elementos tipoEntrada) {

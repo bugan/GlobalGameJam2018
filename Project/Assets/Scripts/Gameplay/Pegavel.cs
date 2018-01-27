@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pegavel : MonoBehaviour {
 	private Rigidbody _corpoRigido;
+	public bool ligada;
 
 	private void Awake() {
 			this._corpoRigido = this.GetComponent<Rigidbody>();
@@ -15,6 +16,7 @@ public class Pegavel : MonoBehaviour {
 
 		this._corpoRigido.freezeRotation = true;
 		this._corpoRigido.isKinematic = true;
+		this.ligada = true;
 	}
 
 	public void soltar()
@@ -22,5 +24,6 @@ public class Pegavel : MonoBehaviour {
 		this.transform.parent = null;
 		this._corpoRigido.freezeRotation = false;
 		this._corpoRigido.isKinematic = false;
+		this.ligada = false;
 	}
 }

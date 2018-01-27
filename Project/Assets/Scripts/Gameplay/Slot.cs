@@ -10,7 +10,7 @@ public class Slot : MonoBehaviour {
 	public Trilho[] saidas;
 
 	private bool _podeLigar;
-	private CuboElemental _cuboConectado;
+	public CuboElemental _cuboConectado;
 
 	void Start () {
 
@@ -18,15 +18,15 @@ public class Slot : MonoBehaviour {
 
 	void Update () {
 		this._verificarEntradas ();
-		if (!this.estaLigado) {
-			if (this._cuboConectado != null && this._podeLigar) {
-				this._ligar ();
-			}
-		} else {
-			if (this._cuboConectado == null || !this._podeLigar) {
-				this._desligar ();
-			}
+
+		if (this._cuboConectado != null && this._podeLigar) {
+			this._ligar ();
 		}
+
+		if (this._cuboConectado == null || !this._podeLigar) {
+			this._desligar ();
+		}
+
 	}
 
 	private void OnTriggerEnter (Collider other) {
@@ -40,23 +40,26 @@ public class Slot : MonoBehaviour {
 		if (this._cuboConectado == null)
 			return;
 		if (other.gameObject == this._cuboConectado.gameObject) {
-			this._desligar ();
+			this._cuboConectado.desligar ();
 			this._cuboConectado = null;
 		}
 	}
 
 	private void _ligar () {
-		Elementos tipo = this._cuboConectado.tipoResultante(this.tipoEntrada);
-		this._cuboConectado.reagir (this.tipoEntrada);
+		Elementos tipo = this._cuboConectado.tipoResultante (this.tipoEntrada);
 		this.estaLigado = true;
 		for (var i = 0; i < this.saidas.Length; i++) {
 			this.saidas[i].ativo = true;
 			this.saidas[i].tipo = tipo;
 		}
+		this._cuboConectado.reagir (this.tipoEntrada);
 	}
 
 	private void _desligar () {
 		this.estaLigado = false;
+		if (this._cuboConectado != null) {
+			this._cuboConectado.desligar ();
+		}
 		for (var i = 0; i < this.saidas.Length; i++) {
 			this.saidas[i].ativo = false;
 		}

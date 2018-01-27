@@ -11,6 +11,10 @@ public class CuboEletrico : CuboElemental {
 			Debug.Log("Neutro");
 		}
 	}
+	
+	override public void desligar () {
+		
+	}
 
 	override public Elementos tipoResultante (Elementos tipoEntrada) {
 		if (tipoEntrada == Elementos.Luz) {

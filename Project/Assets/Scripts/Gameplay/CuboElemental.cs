@@ -9,5 +9,6 @@ public abstract class CuboElemental : MonoBehaviour {
 	
 
 	public abstract void reagir (Elementos tipoEntrada);
+	public abstract void desligar ();
 	public abstract Elementos tipoResultante(Elementos tipoEntrada);
 }
