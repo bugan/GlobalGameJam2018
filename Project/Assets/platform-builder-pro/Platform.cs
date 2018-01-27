@@ -85,7 +85,7 @@ namespace PlatformBuilderPro
             meshCollider.sharedMesh = meshFilter.sharedMesh;
             meshFilter.sharedMesh.RecalculateNormals();
             meshFilter.sharedMesh.RecalculateBounds();
-            var o_87_12_636526621145148082 = meshFilter.sharedMesh;
+            var o_87_12_636526797224360423 = meshFilter.sharedMesh;
         }
 
         //a controlled update to the mesh and other components (collider, renderer, etc)

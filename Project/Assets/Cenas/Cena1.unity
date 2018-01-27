@@ -419,25 +419,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4503815068095748, guid: eb3538eae15b0f14cbe9bd222f053eb5,
     type: 2}
   m_PrefabInternal: {fileID: 570657313}
---- !u!1 &647101009 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1817542109873236, guid: 5a3e1ab297ca1994aa00b36d11aa6589,
-    type: 2}
-  m_PrefabInternal: {fileID: 1950287802}
---- !u!64 &647101011
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 647101009}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &653716097 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114373683609585220, guid: 80c3a86856de20e4c9b222382913399e,
@@ -758,6 +739,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 0.23024099
       objectReference: {fileID: 0}
+    - target: {fileID: 114373683609585220, guid: 80c3a86856de20e4c9b222382913399e,
+        type: 2}
+      propertyPath: ativo
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80c3a86856de20e4c9b222382913399e, type: 2}
   m_IsPrefabParent: 0
@@ -979,16 +965,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 563940133}
     m_Modifications:
-    - target: {fileID: 114272023503608398, guid: c5e30669c80f61d48b5f58abfab8b0ab,
-        type: 2}
-      propertyPath: saidas.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114272023503608398, guid: c5e30669c80f61d48b5f58abfab8b0ab,
-        type: 2}
-      propertyPath: entradas.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4937820902455978, guid: c5e30669c80f61d48b5f58abfab8b0ab, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1.8779048
@@ -1026,16 +1002,6 @@ Prefab:
       propertyPath: entradas.Array.data[0]
       value: 
       objectReference: {fileID: 653716097}
-    - target: {fileID: 114272023503608398, guid: c5e30669c80f61d48b5f58abfab8b0ab,
-        type: 2}
-      propertyPath: tipoEntrada
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114272023503608398, guid: c5e30669c80f61d48b5f58abfab8b0ab,
-        type: 2}
-      propertyPath: estaLigado
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c5e30669c80f61d48b5f58abfab8b0ab, type: 2}
   m_IsPrefabParent: 0
@@ -1208,6 +1174,11 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82877453311434156, guid: eb3538eae15b0f14cbe9bd222f053eb5,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
@@ -1432,16 +1403,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 563940133}
     m_Modifications:
-    - target: {fileID: 114629700788651784, guid: 5a3e1ab297ca1994aa00b36d11aa6589,
-        type: 2}
-      propertyPath: saidas.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114629700788651784, guid: 5a3e1ab297ca1994aa00b36d11aa6589,
-        type: 2}
-      propertyPath: entradas.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4685493964568108, guid: 5a3e1ab297ca1994aa00b36d11aa6589, type: 2}
       propertyPath: m_LocalPosition.x
       value: 6.0453196
@@ -1473,14 +1434,6 @@ Prefab:
     - target: {fileID: 4685493964568108, guid: 5a3e1ab297ca1994aa00b36d11aa6589, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4470328604370290, guid: 5a3e1ab297ca1994aa00b36d11aa6589, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 4005249874567380, guid: 5a3e1ab297ca1994aa00b36d11aa6589, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 114629700788651784, guid: 5a3e1ab297ca1994aa00b36d11aa6589,
         type: 2}

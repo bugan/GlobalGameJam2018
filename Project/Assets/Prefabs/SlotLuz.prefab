@@ -169,8 +169,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1686648889536238}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.99, y: -0.71, z: 2.6}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.8779048, y: -0.215, z: -0.08654785}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4653425055313136}
@@ -408,7 +408,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -480,7 +480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5f3e2a64afdaa4cab5501569c8d9b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AoLIgar:
+  AoLigar:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 82975370269076966}
@@ -513,10 +513,10 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   estaLigado: 0
-  tipoEntrada: 0
-  entradas: []
-  saidas:
+  tipoEntrada: 1
+  entradas:
   - {fileID: 0}
+  saidas: []
   _cuboConectado: {fileID: 0}
 --- !u!114 &114616843249816694
 MonoBehaviour:

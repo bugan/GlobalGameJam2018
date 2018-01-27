@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class CuboLuz : CuboElemental {
 	Light _luz;
+	AudioSource _som;
 	private void Start() {
 		this._luz = this.GetComponentInChildren<Light>();
+		this._som = this.GetComponentInChildren<AudioSource>();
 	}
 	override public void reagir (Elementos tipoEntrada) {
 		if (tipoEntrada == Elementos.Eletricidade || tipoEntrada == Elementos.Calor) {
 			Debug.Log ("Gerar Luz");
 			this._luz.enabled = true;
+			this._som.Play();
 		}else{
 			Debug.Log("Neutro");
 		}

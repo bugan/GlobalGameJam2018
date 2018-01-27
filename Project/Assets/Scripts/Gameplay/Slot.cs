@@ -13,7 +13,7 @@ public class Slot : MonoBehaviour {
 	public Trilho[] saidas;
 
 	private bool _podeLigar;
-	public CuboElemental _cuboConectado;
+	private CuboElemental _cuboConectado;
 
 	void Start () {
 
@@ -22,11 +22,11 @@ public class Slot : MonoBehaviour {
 	void Update () {
 		this._verificarEntradas ();
 
-		if (this._cuboConectado != null && this._podeLigar && ! this.estaLigado) {
+		if (this._cuboConectado != null && this._podeLigar) {
 			this._ligar ();
 		}
 
-		if ((this._cuboConectado == null || !this._podeLigar) && !this.estaLigado) {
+		if (this._cuboConectado == null || !this._podeLigar) {
 			this._desligar ();
 		}
 
@@ -49,7 +49,9 @@ public class Slot : MonoBehaviour {
 	}
 
 	private void _ligar () {
-		this.AoLigar.Invoke();
+		if (this.estaLigado)
+			return;
+		this.AoLigar.Invoke ();
 		Elementos tipo = this._cuboConectado.tipoResultante (this.tipoEntrada);
 		this.estaLigado = true;
 		for (var i = 0; i < this.saidas.Length; i++) {
@@ -60,7 +62,9 @@ public class Slot : MonoBehaviour {
 	}
 
 	private void _desligar () {
-		this.AoDesligar.Invoke();
+		if (!this.estaLigado)
+			return;
+		this.AoDesligar.Invoke ();
 		this.estaLigado = false;
 		if (this._cuboConectado != null) {
 			this._cuboConectado.desligar ();
