@@ -18,6 +18,9 @@ public class Cronometro : MonoBehaviour {
 
 	public void SalvarProgresso(int cena){
 		float recordeAtual = PlayerPrefs.GetFloat("Cena"+cena);
+		if(recordeAtual == 0){
+			recordeAtual = Mathf.Infinity;
+		}
 		if(this._tempo < recordeAtual)
 			PlayerPrefs.SetFloat("Cena"+cena, this._tempo);
 	}
