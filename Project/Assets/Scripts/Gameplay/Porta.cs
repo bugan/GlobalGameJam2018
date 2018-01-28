@@ -47,13 +47,11 @@ public class Porta : MonoBehaviour {
 		if (this._estaAberta)
 			return;
 		this._estaAberta = true;
-		Debug.Log ("abrir");
 	}
 
 	private void _fechar () {
 		if (!this._estaAberta)
 			return;
 		this._estaAberta = false;
-		Debug.Log ("Fechar");
 	}
 }
