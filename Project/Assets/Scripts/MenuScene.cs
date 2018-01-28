@@ -18,7 +18,7 @@ public class MenuScene : MonoBehaviour {
 	private void Start () {
 		fadeGroup = FindObjectOfType<CanvasGroup> ();
 		Cursor.lockState = CursorLockMode.None;
-		
+
 		Cursor.visible = true;
 
 		fadeGroup.alpha = 1;
@@ -28,7 +28,6 @@ public class MenuScene : MonoBehaviour {
 	}
 
 	private void Update () {
-		
 
 		//fade in 
 		fadeGroup.alpha = 1 - Time.timeSinceLevelLoad * fadeinSpeed;
@@ -52,26 +51,30 @@ public class MenuScene : MonoBehaviour {
 			case 2:
 					actualMenuPosition = Vector3.left * 800;
 				break;
+			case 3:
+					actualMenuPosition = Vector3.left * 1600;
+				break;
 		}
 	}
 	//Botões. 
 	public void OnPlayClick () {
 		NavigateTo (1);
-		Debug.Log ("Change to game scene");
+
 	}
 
 	public void OnOptionClick () {
 		NavigateTo (2);
+	}
+	public void OnCreditsClick () {
+		NavigateTo (3);
 		Debug.Log ("Change to options ");
 	}
-
 	public void OnExitClicked () {
-		Application.Quit();
-		Debug.Log ("Clossing aplication");
+		Application.Quit ();
 	}
 	public void OnBackClick () {
 		NavigateTo (0);
-		Debug.Log ("back to menu  aplication");
+
 	}
 
 	private void InitLevel () {
