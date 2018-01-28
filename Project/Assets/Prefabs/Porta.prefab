@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 4854883570872714}
   - component: {fileID: 33980490917844170}
   - component: {fileID: 23683383584957344}
+  - component: {fileID: 64682250425770356}
   m_Layer: 0
   m_Name: portaFolha01
   m_TagString: Untagged
@@ -89,6 +90,7 @@ GameObject:
   - component: {fileID: 4761635881977312}
   - component: {fileID: 33941569812994722}
   - component: {fileID: 23793432473978216}
+  - component: {fileID: 64277895070139612}
   m_Layer: 0
   m_Name: portaFolha02
   m_TagString: Untagged
@@ -118,8 +120,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1458351770679538}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.317369, y: -3.0494356, z: -64.210884}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4240455773828830}
@@ -213,7 +215,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: ed108fdda2aa1c9469a6205cb6ae6ec8, type: 2}
+  - {fileID: 2100000, guid: 0469396cb2db3454e839fb3a9c1c7d5f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -247,7 +249,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d044e0e5a685cad4ba2b2eae90a1a36a, type: 2}
+  - {fileID: 2100000, guid: 144b640d333f45f46969714601e73461, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -287,6 +289,34 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1507217430284940}
+  m_Mesh: {fileID: 4300004, guid: 569fd81862ec94e4ba77a04f672a2bee, type: 3}
+--- !u!64 &64277895070139612
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1862815511370086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 569fd81862ec94e4ba77a04f672a2bee, type: 3}
+--- !u!64 &64682250425770356
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507217430284940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300004, guid: 569fd81862ec94e4ba77a04f672a2bee, type: 3}
 --- !u!65 &65288218054937120
 BoxCollider:
@@ -409,7 +439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entrada: {fileID: 0}
-  tipo: 0
+  tipo: 2
   aoPassarPelaPorta:
     m_PersistentCalls:
       m_Calls:
@@ -421,7 +451,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Cena3
+          m_StringArgument: Cena2
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114473110155292066, guid: 0fe7acd7b9e11584baa42e38c4aa5244,
@@ -431,18 +461,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 82877453311434156}
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
