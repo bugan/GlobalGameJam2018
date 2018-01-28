@@ -85,7 +85,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cfbfd62f8f0858843ae1ce1664a243cc, type: 2}
+  - {fileID: 2100000, guid: 7f3931720df911441b090f89e85a3f03, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -128,4 +128,4 @@ MonoBehaviour:
   luz: {fileID: 2100000, guid: 8b076265b8bf5624986998f45bef99c3, type: 2}
   calor: {fileID: 2100000, guid: 86845ff9baa9b21418ffb2ac5a9305ca, type: 2}
   energia: {fileID: 2100000, guid: 31549cf6f9aa9304db1fae3cb30800bd, type: 2}
-  neutro: {fileID: 2100000, guid: cfbfd62f8f0858843ae1ce1664a243cc, type: 2}
+  neutro: {fileID: 2100000, guid: 7f3931720df911441b090f89e85a3f03, type: 2}
