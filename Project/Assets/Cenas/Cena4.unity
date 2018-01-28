@@ -1920,16 +1920,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 114085597319767356, guid: 29f4783e62cc4a04485cd5fd1fd425da,
-        type: 2}
-      propertyPath: chanceDeTocar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 82612839712391718, guid: 29f4783e62cc4a04485cd5fd1fd425da,
-        type: 2}
-      propertyPath: BypassListenerEffects
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29f4783e62cc4a04485cd5fd1fd425da, type: 2}
   m_IsPrefabParent: 0
