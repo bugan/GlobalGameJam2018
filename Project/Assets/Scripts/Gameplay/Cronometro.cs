@@ -13,7 +13,7 @@ public class Cronometro : MonoBehaviour {
 	
 	void Update () {
 		this._tempo+= Time.deltaTime;
-		this.textoTempo.text = (Mathf.FloorToInt(this._tempo/60)).ToString("N0") + ":" + (this._tempo%60).ToString("N0");
+		this.textoTempo.text = (Mathf.FloorToInt(this._tempo/60)).ToString("N0") + " : " + (this._tempo%60).ToString("N0");
 	}
 
 	public void SalvarProgresso(int cena){
