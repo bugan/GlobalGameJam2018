@@ -809,6 +809,21 @@ Prefab:
       propertyPath: textoComando
       value: 
       objectReference: {fileID: 73161691}
+    - target: {fileID: 114522031990339066, guid: c9d2099ea21fb8e4e95ca4e89ca96c98,
+        type: 2}
+      propertyPath: m_RunstepLenghten
+      value: 0.606
+      objectReference: {fileID: 0}
+    - target: {fileID: 114522031990339066, guid: c9d2099ea21fb8e4e95ca4e89ca96c98,
+        type: 2}
+      propertyPath: m_FovKick.FOVIncrease
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114522031990339066, guid: c9d2099ea21fb8e4e95ca4e89ca96c98,
+        type: 2}
+      propertyPath: m_UseHeadBob
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9d2099ea21fb8e4e95ca4e89ca96c98, type: 2}
   m_IsPrefabParent: 0

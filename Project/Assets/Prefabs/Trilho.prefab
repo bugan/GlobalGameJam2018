@@ -50,8 +50,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1965510413819232}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.34, y: 0.07, z: -8.05}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.5928125, y: 0.01, z: -3.832512}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4695976793850938}
@@ -65,8 +65,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1842437761842534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.92}
-  m_LocalScale: {x: 0.4125, y: 0.23024093, z: 12.886407}
+  m_LocalPosition: {x: 0, y: 0, z: 0.707}
+  m_LocalScale: {x: 0.41250083, y: 0.049999997, z: 9.640767}
   m_Children: []
   m_Father: {fileID: 4051570480383672}
   m_RootOrder: 0
@@ -123,5 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a08d3b629935bd74ca68cf18388143b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ativo: 1
+  ativo: 0
   tipo: 0
+  luz: {fileID: 2100000, guid: 8b076265b8bf5624986998f45bef99c3, type: 2}
+  calor: {fileID: 2100000, guid: 86845ff9baa9b21418ffb2ac5a9305ca, type: 2}
+  energia: {fileID: 2100000, guid: 31549cf6f9aa9304db1fae3cb30800bd, type: 2}
+  neutro: {fileID: 2100000, guid: cfbfd62f8f0858843ae1ce1664a243cc, type: 2}

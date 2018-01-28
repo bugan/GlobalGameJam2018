@@ -11,18 +11,17 @@ public class CuboLuz : CuboElemental {
 	}
 	override public void reagir (Elementos tipoEntrada) {
 		if (tipoEntrada == Elementos.Eletricidade || tipoEntrada == Elementos.Calor) {
-			Debug.Log ("Gerar Luz");
+			this.miolo.material = this.materialAceso;
 			this._luz.enabled = true;
 			this._som.Play();
 			this.ativo = true;
-		}else{
-			Debug.Log("Neutro");
 		}
 	}
 
 	override public void desligar () {
 		this._luz.enabled = false;
 		this.ativo = false;
+		this.miolo.material = this.materialApagado;
 	}
 
 	override public Elementos tipoResultante (Elementos tipoEntrada) {

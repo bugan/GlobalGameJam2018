@@ -57,8 +57,7 @@ public class Slot : MonoBehaviour {
 		Elementos tipo = this._cuboConectado.tipoResultante (this.tipoEntrada);
 		this.estaLigado = true;
 		for (var i = 0; i < this.saidas.Length; i++) {
-			this.saidas[i].ativo = true;
-			this.saidas[i].tipo = tipo;
+			this.saidas[i].ativar(tipo);
 		}
 		this._cuboConectado.reagir (this.tipoEntrada);
 	}
@@ -72,7 +71,7 @@ public class Slot : MonoBehaviour {
 			this._cuboConectado.desligar ();
 		}
 		for (var i = 0; i < this.saidas.Length; i++) {
-			this.saidas[i].ativo = false;
+			this.saidas[i].desativar();
 		}
 	}
 
