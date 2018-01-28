@@ -1083,11 +1083,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1198358740}
     m_Modifications:
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4503815068095748, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3.317369
@@ -1120,10 +1115,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1458351770679538, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
-      propertyPath: m_Name
-      value: PortaSaida
-      objectReference: {fileID: 0}
     - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
         type: 2}
       propertyPath: entrada
@@ -1131,95 +1122,13 @@ Prefab:
       objectReference: {fileID: 1854933504}
     - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
         type: 2}
-      propertyPath: terminarCena.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1701821321}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
       propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1701821321}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: carregarCenaViaEvento
+    - target: {fileID: 1458351770679538, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
+      propertyPath: m_Name
+      value: PortaSaida
       objectReference: {fileID: 0}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Cena2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: tipo
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 114473110155292066, guid: 0fe7acd7b9e11584baa42e38c4aa5244,
-        type: 2}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: salvarLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 65288218054937120, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 82877453311434156, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: spreadCustomCurve.m_RotationOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 23793432473978216, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 144b640d333f45f46969714601e73461, type: 2}
-    - target: {fileID: 23683383584957344, guid: eb3538eae15b0f14cbe9bd222f053eb5,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0469396cb2db3454e839fb3a9c1c7d5f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
   m_IsPrefabParent: 0
