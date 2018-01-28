@@ -1651,6 +1651,48 @@ Transform:
   m_PrefabParentObject: {fileID: 4726069039005102, guid: 792aac38b2b10974dbdf75007b50aba2,
     type: 2}
   m_PrefabInternal: {fileID: 764274405}
+--- !u!1001 &768320988
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4213953151947348, guid: f790530d631307247a35b087b7fa6b15, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213953151947348, guid: f790530d631307247a35b087b7fa6b15, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213953151947348, guid: f790530d631307247a35b087b7fa6b15, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -50.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213953151947348, guid: f790530d631307247a35b087b7fa6b15, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213953151947348, guid: f790530d631307247a35b087b7fa6b15, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213953151947348, guid: f790530d631307247a35b087b7fa6b15, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213953151947348, guid: f790530d631307247a35b087b7fa6b15, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213953151947348, guid: f790530d631307247a35b087b7fa6b15, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f790530d631307247a35b087b7fa6b15, type: 2}
+  m_IsPrefabParent: 0
 --- !u!114 &804216522 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114373683609585220, guid: 80c3a86856de20e4c9b222382913399e,
