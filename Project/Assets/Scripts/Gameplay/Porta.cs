@@ -7,6 +7,8 @@ public class Porta : MonoBehaviour {
 	public Trilho entrada;
 	public Elementos tipo;
 
+	public UnityEvent aoAbrir;
+	public UnityEvent aoFechar;
 	public UnityEvent aoPassarPelaPorta;
 	private Animator _animacao;
 	private bool _estaAberta;
@@ -46,12 +48,14 @@ public class Porta : MonoBehaviour {
 	private void _abrir () {
 		if (this._estaAberta)
 			return;
+			this.aoAbrir.Invoke();
 		this._estaAberta = true;
 	}
 
 	private void _fechar () {
 		if (!this._estaAberta)
 			return;
+			this.aoFechar.Invoke();
 		this._estaAberta = false;
 	}
 }
