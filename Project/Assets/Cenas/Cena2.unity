@@ -1294,6 +1294,16 @@ Prefab:
       propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1701821321}
+    - target: {fileID: 23683383584957344, guid: eb3538eae15b0f14cbe9bd222f053eb5,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 182bb90f66d2ee14e83a81daaa12d4bb, type: 2}
+    - target: {fileID: 23793432473978216, guid: eb3538eae15b0f14cbe9bd222f053eb5,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f08aec858fc3d6a45a0be195e9a4d7c0, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
   m_IsPrefabParent: 0
