@@ -1128,6 +1128,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02911fa8cbf23af44b3deca69d7da784, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &767938487 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114589978014739988, guid: 02911fa8cbf23af44b3deca69d7da784,
+    type: 2}
+  m_PrefabInternal: {fileID: 767938486}
+  m_Script: {fileID: 11500000, guid: a373ec96b572e964a8b2892e07225f77, type: 3}
 --- !u!1001 &834617042
 Prefab:
   m_ObjectHideFlags: 0
@@ -1767,8 +1773,7 @@ Prefab:
         type: 2}
       propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 114589978014739988, guid: 02911fa8cbf23af44b3deca69d7da784,
-        type: 2}
+      objectReference: {fileID: 767938487}
     - target: {fileID: 114424595686784028, guid: eb3538eae15b0f14cbe9bd222f053eb5,
         type: 2}
       propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
