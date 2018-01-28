@@ -420,6 +420,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bc55a668c2a0342947099192d4bb48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab: {fileID: 1293195588541042, guid: b371a5ad604a0fc41a30db5ffc20401f, type: 2}
+  numCenas: 5
 --- !u!114 &331846201
 MonoBehaviour:
   m_ObjectHideFlags: 0
