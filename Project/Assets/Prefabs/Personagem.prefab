@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54183601813887190}
   - component: {fileID: 82890066362397020}
   - component: {fileID: 114406537864983150}
+  - component: {fileID: 114780722027888212}
   m_Layer: 0
   m_Name: Personagem
   m_TagString: Player
@@ -407,6 +408,17 @@ MonoBehaviour:
   distanciaMiminaParaPegar: 2
   controleCamera: {fileID: 4243467379423562}
   pontoDeApoioCaixa: {fileID: 4742934816233042}
+--- !u!114 &114780722027888212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1032044074588926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94dbc4b0a9c87e04887589772d775aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!124 &124201700573345040
 Behaviour:
   m_ObjectHideFlags: 1

@@ -28,6 +28,7 @@ public class MenuScene : MonoBehaviour {
 	}
 
 	private void Update () {
+		
 
 		//fade in 
 		fadeGroup.alpha = 1 - Time.timeSinceLevelLoad * fadeinSpeed;
@@ -65,7 +66,7 @@ public class MenuScene : MonoBehaviour {
 	}
 
 	public void OnExitClicked () {
-
+		Application.Quit();
 		Debug.Log ("Clossing aplication");
 	}
 	public void OnBackClick () {
