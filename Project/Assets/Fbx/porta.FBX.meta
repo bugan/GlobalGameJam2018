@@ -14,6 +14,9 @@ ModelImporter:
     400004: portaFolha01
     400006: portaFolha02
     2100000: No Name
+    2100002: portaArco
+    2100004: portaFolha02
+    2100006: portaFolha01
     2300000: portaArco
     2300002: portaFolha01
     2300004: portaFolha02
@@ -25,7 +28,22 @@ ModelImporter:
     4300004: portaFolha01
     7400000: Abrir
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: portaArco
+    second: {fileID: 2100000, guid: 658caab9a4409ae4ea2a7fac346211a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: portaFolha01
+    second: {fileID: 2100000, guid: ed108fdda2aa1c9469a6205cb6ae6ec8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: portaFolha02
+    second: {fileID: 2100000, guid: d044e0e5a685cad4ba2b2eae90a1a36a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
