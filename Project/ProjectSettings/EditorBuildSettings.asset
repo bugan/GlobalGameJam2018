@@ -23,3 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cenas/Cena3.unity
     guid: 92b9827d96dd10b4888fea36c0592152
+  - enabled: 1
+    path: Assets/Cenas/Cena4.unity
+    guid: c4fa7ad76254d144c9c02867c6305971

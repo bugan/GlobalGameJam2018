@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class CuboElemental : MonoBehaviour {
 
 	public Elementos tipo;
+	public bool ativo;
 
 	
 
