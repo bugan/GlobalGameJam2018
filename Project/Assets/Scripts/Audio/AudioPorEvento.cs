@@ -11,7 +11,6 @@ public class AudioPorEvento : MonoBehaviour {
 	
 	public void AlterarChance(float i){
 		this.chanceDeTocar = i;
-		Debug.Log(i);
 	}
 	public void tentarTocarAudio(){
 		float random = Random.RandomRange(0f,1f);
