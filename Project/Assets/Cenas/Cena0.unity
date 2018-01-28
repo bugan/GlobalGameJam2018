@@ -50,7 +50,7 @@ LightmapSettings:
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
-    m_EnvironmentLightingMode: 0
+    m_EnvironmentLightingMode: 1
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000030, guid: c41d5d7c4e620fc4ca8069621c244752,
+  m_LightingDataAsset: {fileID: 112000036, guid: c41d5d7c4e620fc4ca8069621c244752,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -299,7 +299,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4503815068095748, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.63445
+      value: -5.596
       objectReference: {fileID: 0}
     - target: {fileID: 4503815068095748, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -401,6 +401,10 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 3573a6fbd2d6d4a4e91d06369ccefaef, type: 3}
+    - target: {fileID: 1022122794843476, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
   m_IsPrefabParent: 0
@@ -1009,7 +1013,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4636780924896384, guid: beb01743c85cbbb49ae479b8ebb99527, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.0214062
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 4636780924896384, guid: beb01743c85cbbb49ae479b8ebb99527, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1145,7 +1149,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4503815068095748, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.0214062
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4503815068095748, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1208,6 +1212,10 @@ Prefab:
         type: 2}
       propertyPath: aoPassarPelaPorta.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022122794843476, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb3538eae15b0f14cbe9bd222f053eb5, type: 2}
@@ -1331,6 +1339,14 @@ Prefab:
       propertyPath: ativo
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1842437761842534, guid: 80c3a86856de20e4c9b222382913399e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965510413819232, guid: 80c3a86856de20e4c9b222382913399e, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80c3a86856de20e4c9b222382913399e, type: 2}
   m_IsPrefabParent: 0
@@ -1375,7 +1391,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4636780924896384, guid: beb01743c85cbbb49ae479b8ebb99527, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.0214062
+      value: 1.022
       objectReference: {fileID: 0}
     - target: {fileID: 4636780924896384, guid: beb01743c85cbbb49ae479b8ebb99527, type: 2}
       propertyPath: m_LocalPosition.y
