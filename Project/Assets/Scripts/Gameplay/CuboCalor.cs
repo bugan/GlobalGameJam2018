@@ -11,6 +11,8 @@ public class CuboCalor : CuboElemental {
 			this.miolo.material = materialAceso;
 			this.ativo = true;
 			
+		}else{
+			this.AoErrar.Invoke();
 		}
 	}
 	override public void desligar () {

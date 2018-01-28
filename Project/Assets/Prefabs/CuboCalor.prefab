@@ -285,7 +285,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 400e479f1983aea4d9ae2a4ad73eb44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AoErrar:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114085597319767356, guid: 29f4783e62cc4a04485cd5fd1fd425da,
+          type: 2}
+        m_MethodName: tentarTocarAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   tipo: 0
+  ativo: 0
   materialAceso: {fileID: 2100000, guid: b86662d9aff62e1469867f4443156c98, type: 2}
   materialApagado: {fileID: 2100000, guid: 55678a2780ec88a468e2dc6cb41b2bf8, type: 2}
   miolo: {fileID: 23509681703958350}

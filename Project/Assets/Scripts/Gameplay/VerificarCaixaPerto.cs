@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class VerificarCaixaPerto : MonoBehaviour {
-
+	public UnityEvent AoPegar;
 	public float distanciaMiminaParaPegar;
 	public Transform controleCamera;
 	public Transform pontoDeApoioCaixa;
@@ -43,6 +43,7 @@ public class VerificarCaixaPerto : MonoBehaviour {
 	}
 
 	public void pegarCaixa (Pegavel pegavel) {
+		this.AoPegar.Invoke();
 		this._segurando = pegavel;
 		this._segurando.pegar (this.pontoDeApoioCaixa);
 		this.SendMessageUpwards ("alterarComandoParaSoltarCaixa");

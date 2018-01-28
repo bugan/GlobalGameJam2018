@@ -15,6 +15,8 @@ public class CuboLuz : CuboElemental {
 			this._luz.enabled = true;
 			this._som.Play();
 			this.ativo = true;
+		}else{
+			this.AoErrar.Invoke();
 		}
 	}
 
