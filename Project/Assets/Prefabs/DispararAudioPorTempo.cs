@@ -18,8 +18,6 @@ public class DispararAudioPorTempo : MonoBehaviour {
 		{
 			this.recorde = this.tempoEsperado;
 		}
-
-		Debug.Log((this.recorde));
 	}
 	void Update () {
 		this._cronometro += Time.deltaTime;
